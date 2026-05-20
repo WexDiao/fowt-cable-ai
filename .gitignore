@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# OrcaFlex / data (too large for GitHub)
+*.sim
+*.dat
+*.yml.bak
+
+# Secrets
+ANTHROPIC_API_KEY
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
