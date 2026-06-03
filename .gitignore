@@ -27,6 +27,13 @@ ENV/
 ANTHROPIC_API_KEY
 *.key
 
+# Claude Code local settings
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
+
+# Literature PDFs — store locally, do not push (repo size)
+papers/*
+!papers/.gitkeep
