@@ -15,13 +15,16 @@ fowt-cable-ai/
 ├── notes/
 │   ├── papers/        ← 论文精读笔记（每篇论文一个 .md 文件）
 │   └── concepts/      ← 理论概念笔记（ML 原理、工程知识等）
-├── notebooks/         ← Jupyter notebook（编号命名，如 01-eda.ipynb）
-├── scripts/           ← 独立 Python 脚本
+├── notebooks/         ← Jupyter notebook / 编号脚本（如 01_wind_data_eda.py）
+├── scripts/           ← 独立 Python 工具脚本
 ├── fowt-cable-ai/     ← Python 包源码
-├── figures/           ← 图表、可视化输出
-├── papers/            ← 文献 PDF（本地保留，不上传）
-├── push.bat           ← 双击一键推送（Windows）
-├── push.sh            ← 终端推送脚本
+├── figures/           ← 图表、可视化输出（按分析名子目录）
+├── seminars/          ← 组会 / 学会汇报（事件存档）
+│   └── <YYYY-MM-DD>_<topic>/   ← 仅这里允许日期，且日期在文件名而非嵌套
+├── data/              ← 原始数据（gitignored，本地）
+├── papers/            ← 文献 PDF（gitignored，本地）
+├── push.bat / push.sh ← 一键推送
+├── LOG.md             ← 进度日志（最新在顶）
 ├── WORKFLOW.md        ← 本文件
 └── README.md
 ```
@@ -32,11 +35,14 @@ fowt-cable-ai/
 |---------|---------|
 | 论文阅读笔记 `.md` | `notes/papers/论文名或ID.md` |
 | 理论/概念笔记 `.md` | `notes/concepts/主题名.md` |
-| Python 脚本 `.py` | `scripts/` |
+| Python 脚本（一次性分析） | `notebooks/` |
+| Python 脚本（通用工具） | `scripts/` |
 | Python 包代码 | `fowt-cable-ai/` |
-| Jupyter notebook | `notebooks/` |
-| 图表 / 图片 | `figures/` |
-| 文献 PDF | `papers/`（仅本地，永远不上传） |
+| 图表 / 图片（来自分析） | `figures/<分析名>/` |
+| 组会汇报（PPT + 讲稿 + 生成脚本） | `seminars/<日期>_<主题>/` |
+| 原始数据 (CSV / sim) | `data/`（**永远不上传**） |
+| 文献 PDF | `papers/`（**永远不上传**） |
+| 进度日志条目 | 追加到 `LOG.md` 顶部 |
 
 ---
 

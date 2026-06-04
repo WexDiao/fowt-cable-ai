@@ -20,7 +20,7 @@ Machine learning surrogate model portfolio for predicting fatigue damage and dyn
 
 | # | Notebook | Description | Status |
 |---|----------|-------------|--------|
-| 01 | `01_wind_data_eda.ipynb` | Wind/wave data EDA | 🔲 |
+| 01 | `01_wind_data_eda.py` | Wind SCADA EDA (Kaggle T1.csv) | ✅ |
 | 02 | `02_fatigue_surrogate_XGBoost.ipynb` | XGBoost fatigue surrogate (→ B-14) | 🔲 |
 | 03 | `03_seabed_ML_prediction.ipynb` | Seabed parameter ML (→ B-20) | 🔲 |
 | 04 | `04_lstm_cable_tension.ipynb` | LSTM cable tension time-series | 🔲 |
@@ -36,9 +36,31 @@ Machine learning surrogate model portfolio for predicting fatigue damage and dyn
 - **Dashboard**: Streamlit
 - **LLM Report**: Claude API (Anthropic)
 
-## Learning Log
+## Repository Layout
 
-Daily progress is tracked in [`notes/`](./notes/) — one markdown file per study day.
+```
+.
+├── notebooks/        # Numbered analysis scripts (.py / .ipynb)
+├── scripts/          # Standalone reusable Python tools
+├── fowt-cable-ai/    # Python package (importable modules)
+├── notes/
+│   ├── papers/       # Paper reading notes (one md per paper)
+│   └── concepts/     # Topic-based concept / workflow notes
+├── figures/          # Visual outputs from analyses
+├── seminars/         # Time-stamped group-meeting deliverables
+│                     #   <YYYY-MM-DD>_<topic>/  ← dates only in folder name
+├── data/             # Raw datasets (gitignored)
+├── papers/           # Literature PDFs (gitignored)
+└── LOG.md            # Session-by-session progress log
+```
+
+Why not date-named folders? **Git already tracks time.** Folders carry
+**content**. Only `seminars/` and `LOG.md` are date-aware because they
+archive time-stamped events.
+
+## Progress
+
+See [`LOG.md`](./LOG.md) — newest entry on top.
 
 ---
 

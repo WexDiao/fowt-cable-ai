@@ -37,3 +37,8 @@ Thumbs.db
 # Literature PDFs — store locally, do not push (repo size)
 papers/*
 !papers/.gitkeep
+
+# Raw data — store locally, never push (large CSVs, Kaggle / SCADA / OrcaFlex outputs)
+data/*
+!data/.gitkeep
+!data/README.md
