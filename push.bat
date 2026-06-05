@@ -10,7 +10,7 @@ if %errorlevel% neq 0 (
     echo [ERROR] No remote origin found.
     echo.
     echo Run this once:
-    echo   git remote add origin https://github.com/WexDiao/DailyNotes.git
+    echo   git remote add origin https://github.com/WexDiao/fowt-cable-ai.git
     echo.
     pause
     exit /b 1

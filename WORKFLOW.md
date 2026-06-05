@@ -78,7 +78,7 @@ bash push.sh
 
 **脚本报错 "No remote origin found"：**
 ```bash
-git remote add origin https://github.com/WexDiao/DailyNotes.git
+git remote add origin https://github.com/WexDiao/fowt-cable-ai.git
 ```
 
 **push 被拒绝（rejected）：**

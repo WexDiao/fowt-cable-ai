@@ -9,7 +9,7 @@ echo -e "${GREEN}=== fowt-cable-ai push ===${NC}"
 if ! git remote get-url origin &>/dev/null; then
   echo -e "${RED}[ERROR] No remote origin found.${NC}"
   echo "Run this once to connect your GitHub repo:"
-  echo "  git remote add origin https://github.com/WexDiao/DailyNotes.git"
+  echo "  git remote add origin https://github.com/WexDiao/fowt-cable-ai.git"
   exit 1
 fi
 
