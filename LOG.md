@@ -8,7 +8,18 @@ For the why behind a session, look at the linked PR / commit / file.
 
 ---
 
-## 2026-06-05 · Seminar delivered + repo reorganised
+## 2026-06-05 · Repo restructure & rename
+
+- 🔧 Flattened layout: 11 top-level entries → 7
+  (`code/`, `notes/{papers,learning}/`, `figures/`, `seminars/`, `_local/`)
+  → commit `3c937ad`
+- 🌐 Renamed GitHub repo: `DailyNotes` → `fowt-cable-ai`; updated remote
+  URL and push-script fallback strings → commits `904186c`, `1e669a8`
+- 📝 Trimmed `README.md` to factual content only
+
+---
+
+## 2026-06-05 · Seminar delivered + first AI mini-project
 
 - 🎤 Delivered group-meeting talk (9-slide English deck, ~5 min)
   → `seminars/2026-06-05_cable_review_and_eda/`
@@ -21,9 +32,8 @@ For the why behind a session, look at the linked PR / commit / file.
   `notes/learning/kaggle_scada_setup.md`
 - 🗂 Added top-level `seminars/` folder for time-stamped talks
   (dates live in folder name, not in repo structure)
-- 📌 Decided research direction = **OrcaFlex global simulation + AI**
-  (Beier 2023 simplified stress factor → bending-Kc correction via NN +
-  full surrogate model as 12-week target)
+- 📌 Decided research focus: global-simulation + ML surrogate models
+  for cable fatigue prediction
 
 ---
 
