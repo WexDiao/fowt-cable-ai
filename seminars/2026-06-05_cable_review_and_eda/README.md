@@ -25,7 +25,7 @@ Reads PNGs from `figures/eda_wind_scada/`, writes `slides_en.pptx` next to
 the script. Re-run the EDA notebook first if you want fresh figures:
 
 ```bash
-python notebooks/01_wind_data_eda.py
+python code/01_wind_data_eda.py
 ```
 
 ## Slide map

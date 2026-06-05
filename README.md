@@ -16,16 +16,16 @@ OrcaFlex 時域シミュレーションデータを用いて CNN-GRU サロゲ�
 
 Machine learning surrogate model portfolio for predicting fatigue damage and dynamic response of FOWT dynamic power cables. Implements CNN-GRU architecture from Marine Structures 2024 using PyTorch, with XGBoost baseline and Streamlit monitoring dashboard.
 
-## Notebooks
+## Code
 
-| # | Notebook | Description | Status |
-|---|----------|-------------|--------|
-| 01 | `01_wind_data_eda.py` | Wind SCADA EDA (Kaggle T1.csv) | ✅ |
-| 02 | `02_fatigue_surrogate_XGBoost.ipynb` | XGBoost fatigue surrogate (→ B-14) | 🔲 |
-| 03 | `03_seabed_ML_prediction.ipynb` | Seabed parameter ML (→ B-20) | 🔲 |
-| 04 | `04_lstm_cable_tension.ipynb` | LSTM cable tension time-series | 🔲 |
-| 05 | `05_CNN_GRU_cable_surrogate.ipynb` | **CNN-GRU core model (→ B-13)** | 🔲 |
-| 06 | `06_cable_health_monitor_demo/` | Streamlit Dashboard + LLM Report | 🔲 |
+| # | Script | Description | Status |
+|---|--------|-------------|--------|
+| 01 | `code/01_wind_data_eda.py` | Wind SCADA EDA (Kaggle T1.csv) | ✅ |
+| 02 | `code/02_fatigue_surrogate_XGBoost.ipynb` | XGBoost fatigue surrogate (→ B-14) | 🔲 |
+| 03 | `code/03_seabed_ML_prediction.ipynb` | Seabed parameter ML (→ B-20) | 🔲 |
+| 04 | `code/04_lstm_cable_tension.ipynb` | LSTM cable tension time-series | 🔲 |
+| 05 | `code/05_CNN_GRU_cable_surrogate.ipynb` | **CNN-GRU core model (→ B-13)** | 🔲 |
+| 06 | `code/06_cable_health_monitor_demo/` | Streamlit Dashboard + LLM Report | 🔲 |
 
 ## Tech Stack
 
@@ -40,23 +40,27 @@ Machine learning surrogate model portfolio for predicting fatigue damage and dyn
 
 ```
 .
-├── notebooks/        # Numbered analysis scripts (.py / .ipynb)
-├── scripts/          # Standalone reusable Python tools
-├── fowt-cable-ai/    # Python package (importable modules)
+├── code/             # All Python scripts and notebooks
 ├── notes/
-│   ├── papers/       # Paper reading notes (one md per paper)
-│   └── concepts/     # Topic-based concept / workflow notes
+│   ├── papers/       # Paper reading notes (one .md per paper)
+│   └── learning/     # Self-study notes: concepts, cheatsheets, walkthroughs
 ├── figures/          # Visual outputs from analyses
 ├── seminars/         # Time-stamped group-meeting deliverables
 │                     #   <YYYY-MM-DD>_<topic>/  ← dates only in folder name
-├── data/             # Raw datasets (gitignored)
-├── papers/           # Literature PDFs (gitignored)
+├── _local/           # Gitignored container — never pushed
+│   ├── data/         #   raw datasets (CSV, OrcaFlex .sim)
+│   └── pdfs/         #   literature PDFs
 └── LOG.md            # Session-by-session progress log
 ```
 
 Why not date-named folders? **Git already tracks time.** Folders carry
 **content**. Only `seminars/` and `LOG.md` are date-aware because they
 archive time-stamped events.
+
+Why `_local/`? Everything that must stay on disk but never leave the
+machine (raw CSVs, PDFs, private OrcaFlex outputs) lives under a single
+underscore-prefixed folder. One look at the repo root tells you what is
+pushed (no leading underscore) versus what is local (`_local/`).
 
 ## Progress
 

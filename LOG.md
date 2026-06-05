@@ -13,12 +13,12 @@ For the why behind a session, look at the linked PR / commit / file.
 - 🎤 Delivered group-meeting talk (9-slide English deck, ~5 min)
   → `seminars/2026-06-05_cable_review_and_eda/`
 - 🛠 First AI mini-project complete: end-to-end EDA on Kaggle SCADA T1.csv
-  → `notebooks/01_wind_data_eda.py` (8 PNGs in `figures/eda_wind_scada/`)
-- 📓 Code walkthrough doc written: `notes/concepts/eda_code_walkthrough.md`
-- 📓 Concept notes added:
-  `notes/concepts/python_data_stack_cheatsheet.md`,
-  `notes/concepts/dynamic_cable_basics.md`,
-  `notes/concepts/kaggle_scada_setup.md`
+  → `code/01_wind_data_eda.py` (8 PNGs in `figures/eda_wind_scada/`)
+- 📓 Code walkthrough doc written: `notes/learning/eda_code_walkthrough.md`
+- 📓 Learning notes added:
+  `notes/learning/python_data_stack_cheatsheet.md`,
+  `notes/learning/dynamic_cable_basics.md`,
+  `notes/learning/kaggle_scada_setup.md`
 - 🗂 Added top-level `seminars/` folder for time-stamped talks
   (dates live in folder name, not in repo structure)
 - 📌 Decided research direction = **OrcaFlex global simulation + AI**

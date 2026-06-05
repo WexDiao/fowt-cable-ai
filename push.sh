@@ -23,7 +23,7 @@ fi
 echo "$STATUS"
 echo ""
 
-# Stage all (papers/ is gitignored, PDFs are skipped automatically)
+# Stage all (_local/ is gitignored, PDFs and raw data are skipped automatically)
 git add -A
 
 # Commit message (default: today's date)

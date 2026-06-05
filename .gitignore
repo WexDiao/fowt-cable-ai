@@ -34,11 +34,11 @@ ANTHROPIC_API_KEY
 .DS_Store
 Thumbs.db
 
-# Literature PDFs — store locally, do not push (repo size)
-papers/*
-!papers/.gitkeep
-
-# Raw data — store locally, never push (large CSVs, Kaggle / SCADA / OrcaFlex outputs)
-data/*
-!data/.gitkeep
-!data/README.md
+# Local-only assets — everything under _local/ is gitignored
+# (literature PDFs, raw CSVs, OrcaFlex outputs, anything too large or private)
+# Exceptions: a README per subdir + .gitkeep so empty subdirs survive
+/_local/**
+!/_local/data/
+!/_local/data/README.md
+!/_local/pdfs/
+!/_local/pdfs/.gitkeep

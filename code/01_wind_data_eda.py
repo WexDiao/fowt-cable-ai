@@ -1,12 +1,12 @@
 """Wind SCADA EDA — Cells 1-11 of the AI mini-project pipeline.
 
 Usage (from anywhere):
-    python notebooks/01_wind_data_eda.py
+    python code/01_wind_data_eda.py
 
-Reads:    data/T1.csv  (Kaggle SCADA dataset; gitignored)
+Reads:    _local/data/T1.csv  (Kaggle SCADA dataset; gitignored)
 Writes:   figures/eda_wind_scada/*.png  (8 PNGs: 4 summary + 4 annotated single)
-Fallback: if data/T1.csv is missing, runs on synthetic data so the script
-          always renders something — useful for CI and offline checks.
+Fallback: if _local/data/T1.csv is missing, runs on synthetic data so the
+          script always renders something — useful for CI and offline checks.
 """
 
 from pathlib import Path
@@ -18,9 +18,9 @@ import seaborn as sns
 
 sns.set_style("whitegrid")
 
-HERE = Path(__file__).resolve().parent              # notebooks/
+HERE = Path(__file__).resolve().parent              # code/
 ROOT = HERE.parent                                  # repo root
-DATA_PATH = ROOT / "data" / "T1.csv"
+DATA_PATH = ROOT / "_local" / "data" / "T1.csv"
 OUT_DIR = ROOT / "figures" / "eda_wind_scada"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 USE_SYNTHETIC = not DATA_PATH.exists()
